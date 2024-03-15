@@ -1,0 +1,213 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "RealEsateApi",
+    "dateExported": "2024-03-14T12:34:30.154Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "2a5e8dd4-db89-451f-8142-f139cec629b0",
+            "colId": "9a3800db-1725-468e-a2e6-f0f68563c465",
+            "containerId": "",
+            "name": "home",
+            "url": "http://localhost:3000/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-03-14T08:47:30.758Z",
+            "modified": "2024-03-14T11:15:10.317Z",
+            "headers": [
+                {
+                    "name": "X-Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJleC1scy1hcC0xMC4xNzM4NjAyMDY5OTY2OTgiLCJuYW1lIjoiSm9zVG9rZW4iLCJlbWFpbCI6Ikpvc1Rva2VuQGVtYWlsLmNvbSIsImlhdCI6MTcxMDQxMjM2NCwiZXhwIjoxNzEwNDE1OTY0fQ.6H00RDDI1sF6Rxml4gJ7savimi4IwL-us5buHvaTXt0\", \"_id\": \"65f2d24c1840b749d5d823cf"
+                }
+            ],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJleC1scy1hcC0yLjI5Nzc4Mzc5NzUzNjk5NTUiLCJuYW1lIjoiQnJhZCIsImVtYWlsIjoiYnJhZEBlbWFpbC5jb20iLCJpYXQiOjE3MTA0MTQ4OTIsImV4cCI6MTcxMDQxODQ5Mn0.6GVKR1nVvBE1CrjdsFizd5ZumE1mnVBPu9FLtBjjAjc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "e908b1cc-44d6-41ff-8697-4242c4908339",
+            "colId": "9a3800db-1725-468e-a2e6-f0f68563c465",
+            "containerId": "",
+            "name": "createUser",
+            "url": "http://localhost:3000/users/create",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-14T08:50:33.592Z",
+            "modified": "2024-03-14T11:14:53.080Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Brad\",\n  \"email\": \"brad@email.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "780f237c-164d-4c84-bbcc-3e167e2fb69c",
+            "colId": "9a3800db-1725-468e-a2e6-f0f68563c465",
+            "containerId": "",
+            "name": "favorities",
+            "url": "http://localhost:3000/users/favorites",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-03-14T11:01:19.761Z",
+            "modified": "2024-03-14T11:49:33.255Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"fav\": [\n    {\n      \"brokerTitle\": \"Brokered by Monticello Real Estate Group\",\n      \"type\": \"Co-op for sale\",\n      \"address\": \"83-55 Woodhaven Blvd Unit 1A\"\n    }\n  ],\n  \"action\": \"delete\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1c7262fb-a9f3-4361-84ae-8a718d59e157",
+            "colId": "9a3800db-1725-468e-a2e6-f0f68563c465",
+            "containerId": "",
+            "name": "deleteFavorities",
+            "url": "http://localhost:3000/users/favorites",
+            "method": "PUT",
+            "sortNum": 45000,
+            "created": "2024-03-14T12:33:51.045Z",
+            "modified": "2024-03-14T12:33:51.045Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"fav\": [\n    {\n      \"brokerTitle\": \"Brokered by Monticello Real Estate Group\",\n      \"type\": \"Co-op for sale\",\n      \"address\": \"83-55 Woodhaven Blvd Unit 1A\"\n    }\n  ],\n  \"action\": \"delete\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ed9f666a-2386-43b5-8fb3-f3c30c78284b",
+            "colId": "9a3800db-1725-468e-a2e6-f0f68563c465",
+            "containerId": "",
+            "name": "AllListings",
+            "url": "http://localhost:3000/listings/all?perPage=5&page=1&sort=asc",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-03-14T11:05:20.492Z",
+            "modified": "2024-03-14T11:05:26.558Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "perPage",
+                    "value": "5",
+                    "isPath": false
+                },
+                {
+                    "name": "page",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "sort",
+                    "value": "asc",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "3e6efcce-02b4-4389-b230-b4567567a4a1",
+            "colId": "9a3800db-1725-468e-a2e6-f0f68563c465",
+            "containerId": "",
+            "name": "updateListing",
+            "url": "http://localhost:3000/listings/",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-03-14T11:57:54.835Z",
+            "modified": "2024-03-14T12:00:19.566Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"brokerTitle\": \"Brokered by Monticello Real Estate Group\",\n  \"type\": \"Co-op for sale\",\n  \"address\": \"83-55 Woodhaven Blvd Unit 1A\",\n  \"updates\": {\n    \"brokerTitle\": \"Brokered by Real Estate App\",\n    \"type\": \"New for sale\",\n    \"address\": \"Thespidos 18 , Germany\"\n  }\n}",
+                "form": []
+            },
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "cae31fbf-834e-4976-8478-efc8aba81335",
+            "colId": "9a3800db-1725-468e-a2e6-f0f68563c465",
+            "containerId": "",
+            "name": "filterListings",
+            "url": "http://localhost:3000/listings/filter?type=Condo%20for%20sale&sort=beds",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-03-14T12:09:01.838Z",
+            "modified": "2024-03-14T12:30:53.902Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "type",
+                    "value": "Condo%20for%20sale",
+                    "isPath": false
+                },
+                {
+                    "name": "sort",
+                    "value": "beds",
+                    "isPath": false
+                },
+                {
+                    "name": "order",
+                    "value": "true",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "63db77da-0bac-4985-a499-99288f94c6b9",
+            "colId": "9a3800db-1725-468e-a2e6-f0f68563c465",
+            "containerId": "",
+            "name": "SeedDb",
+            "url": "",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-03-14T12:32:10.932Z",
+            "modified": "2024-03-14T12:32:10.932Z",
+            "headers": []
+        },
+        {
+            "_id": "61614d6a-dcf6-4a78-92b3-07f08c15f536",
+            "colId": "9a3800db-1725-468e-a2e6-f0f68563c465",
+            "containerId": "",
+            "name": "AllUsers",
+            "url": "",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-03-14T12:32:50.024Z",
+            "modified": "2024-03-14T12:32:50.024Z",
+            "headers": []
+        },
+        {
+            "_id": "1e9b4ddf-0338-41fb-99cf-0248d01e24cc",
+            "colId": "9a3800db-1725-468e-a2e6-f0f68563c465",
+            "containerId": "",
+            "name": "singleUser",
+            "url": "",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-03-14T12:33:14.152Z",
+            "modified": "2024-03-14T12:33:14.152Z",
+            "headers": []
+        }
+    ],
+    "settings": {
+        "auth": {
+            "type": "bearer",
+            "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJleC1scy1hcC00LjM4MzgwNzQxMzkwMjY5MyIsIm5hbWUiOiJCcmFkIiwiZW1haWwiOiJicmFkQGVtYWlsLmNvbSIsImlhdCI6MTcxMDQxOTI0NSwiZXhwIjoxNzEwNDIyODQ1fQ.ca5sL4lnpka7vnzLHk9CQGrRbAsNY7LuDCnvGUUmB_s"
+        }
+    }
+}
