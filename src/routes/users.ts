@@ -3,7 +3,7 @@ import { usersModel } from "../lib/schemas/user";
 import { errorHandler } from "../utils/errorHandler";
 
 import { authenticate } from "../middleware/auth";
-import userController from "src/utils/userController";
+import userController from "../utils/userController";
 
 const router = express.Router();
 
