@@ -62,3 +62,6 @@ typings/
 
 # build output folder
 dist/
+
+# Local Netlify folder
+.netlify

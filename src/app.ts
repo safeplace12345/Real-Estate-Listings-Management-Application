@@ -38,4 +38,6 @@ app.use(async (err: Error, _: Request, __: Response, next: NextFunction) => {
   return;
 });
 
-export const handler = serverless(app)
+export default app;
+
+// export const handler = serverless(app)
