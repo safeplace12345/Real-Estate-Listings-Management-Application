@@ -1,3 +1,4 @@
+import serverless from "serverless-http"
 import express, { Request, Response, NextFunction } from "express";
 import * as listingsRouter from "./routes/listings";
 import * as usersRouter from "./routes/users";
@@ -37,4 +38,4 @@ app.use(async (err: Error, _: Request, __: Response, next: NextFunction) => {
   return;
 });
 
-export default app;
+export const handler = serverless(app)

@@ -16,7 +16,7 @@ export const authenticate = async (
     return res.status(401).send(errorHandler.authXExpMsg);
   }
   const token = authorization?.split(" ")[1];
-  if (!validator.isJWT(token))
+  if (!token || !validator.isJWT(token))
     return res.status(401).send(errorHandler.authTknSignExpMsg);
  
     try {

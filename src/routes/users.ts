@@ -26,7 +26,7 @@ router.post("/login", userController.loginUser);
 router.post("/create", userController.createUser);
 
 router.get("/:email", authenticate, async (req: Request, res: Response) => {
-  const { email } = req.query;
+  const { email } = req.params;
   try {
     const user = await usersModel.findOne({ email });
     if (!user) {
